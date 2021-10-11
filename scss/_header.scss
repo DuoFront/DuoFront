@@ -1,0 +1,78 @@
+@use 'variables.scss';
+@use 'mixins.scss';
+
+.header {
+    @include mixins.flex-between;   
+    padding: 1em 2em ;
+    @include mixins.tablet {
+        padding: 1em 2em;
+    }
+    @include mixins.cell {
+        padding: 1em;
+    }
+    &-nav {
+        @include mixins.flex-center;
+        gap: 30px;
+
+        &-logo{
+            display: flex;
+            align-items: center;
+
+            h1 {
+                @include mixins.cell {
+                    display: none;
+                }
+            }
+
+            img{
+                margin-right: 10px;
+                height: 30px;
+                width: 30px;
+            }
+        }
+        h1 {
+            font-size: 25px;
+        }
+        ul {
+            @include mixins.flex-center;
+            gap:30px;
+            @include mixins.cell {
+                display: none;
+            }
+            li{
+                a {
+                    @include mixins.align-center;
+
+                    &:hover {
+                        color: variables.$second-color;
+                    }
+                }
+
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &-sign {
+        @include mixins.flex-center;
+        gap: 10px;
+
+        a:hover {
+                color: variables.$second-color;
+            }
+
+        a:last-of-type {
+
+            p {
+            border-left: 1px solid variables.$primary-color;
+            padding-left: 10px;
+
+                &:hover {
+                    border-color: variables.$second-color;
+                }
+            }
+        }
+    }
+}

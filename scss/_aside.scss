@@ -1,0 +1,101 @@
+@use "variables.scss";
+@use "mixins.scss";
+.aside{
+  background-color: variables.$second-color;
+  height: 100vh;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  @include mixins.tablet {
+    display: none;
+  }
+  &-title{
+    font-size: 60px;
+    max-width: 350px;
+    text-align: center;
+    flex: 3;
+    transform: translateY(20vh);
+    @include mixins.pc {
+      font-size: 45px;
+    }
+    strong{
+      color: variables.$bg-color;
+      font-weight: 500; // a segunda bolinha vai dar um trampuuu ;-; KKKKKK imagino, ficou bonita a sua parte sz obg amor sz
+    }
+  }
+  &-comment{
+    font-size: 20px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1;
+    transform: translate(6vw, 8px);
+    @include mixins.pc {
+      max-width: 200px;
+      font-size: 16px;
+    }
+  }
+  &-imagens{
+    flex: 1;
+    display: flex;
+    transform: translate(calc(6vw + 20px), -20px);
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+    }
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;    
+  }
+
+  .traco1{
+    position: absolute;
+    height: 85vh;
+    width: 2px;
+    background-color: variables.$bg-color;
+    bottom: 0px;
+    left: 5vw;
+  }
+  .traco2{
+    position: absolute;
+    height: 1.8px;
+    width: 10vw;
+    background-color: variables.$bg-color;
+    bottom: 35%;
+    left: 5vw;
+  }
+  .circulo1{
+    width: 50px;
+    height: 50px;
+    background-color: variables.$bg-color;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(15vh - 25px);
+    left: calc( 5vw - 25px);
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circulo2{
+    width: 50px;
+    height: 50px;
+    background-color: variables.$bg-color;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(35% + 75px);
+    right: 7vw;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
