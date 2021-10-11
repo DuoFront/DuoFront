@@ -3,15 +3,15 @@
 
 .aside {
   background-color: variables.$second-color;
-  height: 100vh;
   width: 45%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
 
-  @include mixins.tablet {
+  @media (max-width: 850px) {
     display: none;
   }
 
