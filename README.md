@@ -1,2 +1,2 @@
-# duofront 
-testando o pr mudando o readme
+## Duofront 
+Site para ensinar html/css/js.
