@@ -1,0 +1,120 @@
+@use 'mixins.scss';
+@use 'variables.scss';
+.body-content {
+    display: flex;
+
+    .main {
+        max-width: 55%;
+        width: 100%;
+        height: 100vh;
+
+        @include mixins.tablet {
+            max-width: 100%;
+            margin-bottom: 40px;
+            height: unset;
+        }
+
+        &-title {
+            font-size: 45px;
+            text-align: center;
+            margin: 1.5em 1em;
+
+            strong {
+                color: variables.$second-color;
+            }
+        }
+
+        &-form {
+           max-width: 460px;
+           width: 100%;
+           margin: 0 auto;
+           text-align: start;
+
+           @include mixins.tablet {
+                @include mixins.flex-center;
+                flex-direction: column;
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                @include mixins.tablet {
+                    width: 300px;
+                }
+
+                label {
+                    font-size: 30px;
+                }
+
+                input {
+                    @include mixins.inputLogin;
+
+                    @include mixins.tablet {
+                        max-width: 300px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            &-submit {
+                @include mixins.inputLogin;
+                @include mixins.inputSubmit;
+                transition: all .4s;
+                cursor: pointer;
+
+                @include mixins.tablet {
+                    max-width: 300px;
+                    height: 50px;
+                }
+
+                &:hover {
+                    filter: drop-shadow(.5px .5px 2px variables.$primary-color);
+                }
+            }
+
+            &-check {
+                input[type="checkbox"] {
+                    width: 1px;
+                    height: 1px;
+                    opacity: 0;
+            
+                    &:checked + span::before {
+                        content: "";
+                        border: 2px solid;
+                        width: 5px;
+                        height: 5px;
+                        border-color: transparent variables.$primary-color variables.$primary-color transparent;
+                        top: 1px;
+                        left: 3px;
+                        position: absolute;
+                        transform: rotate(35deg);
+                        background-color: transparent;
+                        z-index: 1;
+                    }
+
+                    &:checked + span::after {
+                        content: "";
+                        position: absolute;
+                        background-color: variables.$second-color;
+                        top:0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        z-index: 0;
+                    }
+                }
+        
+                span {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 2px;
+                    background-color: #bbb;
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
