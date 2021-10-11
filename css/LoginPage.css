@@ -134,7 +134,7 @@ body strong {
   }
 }
 .aside-title {
-  font-size: 60px;
+  font-size: 52px;
   max-width: 350px;
   text-align: center;
   flex: 3;
@@ -231,6 +231,13 @@ body strong {
   width: 100%;
   height: 100vh;
 }
+@media (max-width: 769px) {
+  .body-content .main {
+    max-width: 100%;
+    margin-bottom: 40px;
+    height: unset;
+  }
+}
 .body-content .main-title {
   font-size: 45px;
   text-align: center;
@@ -245,10 +252,24 @@ body strong {
   margin: 0 auto;
   text-align: start;
 }
+@media (max-width: 769px) {
+  .body-content .main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
 .body-content .main-form-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 769px) {
+  .body-content .main-form-content {
+    width: 300px;
+  }
 }
 .body-content .main-form-content label {
   font-size: 30px;
@@ -261,6 +282,12 @@ body strong {
   padding-left: 10px;
   font-size: 20px;
   caret-color: #3A2883;
+}
+@media (max-width: 769px) {
+  .body-content .main-form-content input {
+    max-width: 300px;
+    height: 50px;
+  }
 }
 .body-content .main-form-submit {
   max-width: 455px;
@@ -277,6 +304,12 @@ body strong {
   color: #fff;
   transition: all 0.4s;
   cursor: pointer;
+}
+@media (max-width: 769px) {
+  .body-content .main-form-submit {
+    max-width: 300px;
+    height: 50px;
+  }
 }
 .body-content .main-form-submit:hover {
   filter: drop-shadow(0.5px 0.5px 2px #fff);
