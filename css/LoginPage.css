@@ -121,6 +121,10 @@ body strong {
   border-color: #3A2883;
 }
 
+#asideCadastro {
+  height: unset;
+}
+
 .aside {
   background-color: #3A2883;
   width: 45%;
@@ -228,6 +232,9 @@ body strong {
 
 .body-content {
   display: flex;
+}
+.body-content #mainCadastro {
+  height: unset;
 }
 .body-content .main {
   max-width: 55%;
