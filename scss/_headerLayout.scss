@@ -44,10 +44,26 @@
             ion-icon {
                 color: variables.$primary-color;
                 font-size: 65px;
-                transition: all .4s;
+
+                &:nth-child(1){
+                    animation: descendoTexto .2s linear;
+                    @include mixins.animationMenuLi;
+                }
+
+                &.active {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
 
                 &:nth-child(2) {
                     display: none;
+                    animation: descendoTexto .2s linear;
+                    @include mixins.animationMenuLi;
                 }
             }
         }

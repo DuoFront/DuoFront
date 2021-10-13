@@ -90,10 +90,39 @@ body strong {
 .header-nav .menu-mobile ion-icon {
   color: #fff;
   font-size: 65px;
-  transition: all 0.4s;
+}
+.header-nav .menu-mobile ion-icon:nth-child(1) {
+  animation: descendoTexto 0.2s linear;
+}
+@keyframes descendoTexto {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+.header-nav .menu-mobile ion-icon.active:nth-child(1) {
+  display: none;
+}
+.header-nav .menu-mobile ion-icon.active:nth-child(2) {
+  display: block;
 }
 .header-nav .menu-mobile ion-icon:nth-child(2) {
   display: none;
+  animation: descendoTexto 0.2s linear;
+}
+@keyframes descendoTexto {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
 }
 .header-nav ul {
   display: flex;
