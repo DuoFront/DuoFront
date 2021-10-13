@@ -1,0 +1,98 @@
+@use 'variables.scss';
+@use 'mixins.scss';
+
+.main {
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 100px;
+
+    &-title {
+        margin: 70px 20px;
+        font-size: 45px;
+    }
+
+    .main-cards {
+        @include mixins.flex-center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin: 0 20px;
+
+        &-card {
+            @include mixins.cardLayout;
+            display: flex;
+
+            @include mixins.cell {
+                flex-direction: column;
+                max-width: 30em;
+                height: 30em;
+            }
+
+            &-img {
+                @include mixins.cell {
+                   max-width: 30em;
+                   height: 60%;
+                   object-fit: cover;
+                   border-top-left-radius: 10px;
+                   border-top-right-radius: 10px;
+                }
+            }
+
+            .card-text {
+                text-align: start;
+                padding-left: 1em;
+
+                @include mixins.cell {
+                    text-align: center;
+                    padding-left: 0;
+                }
+
+                &-title {
+                    color: variables.$second-color;
+                    font-weight: 500;
+                    font-size: 1.8em;
+                }
+
+                &-level {
+                    font-size: 30px;
+                }
+    
+                &-level[class~="easy"] {
+                    color: variables.$easy;
+                }
+    
+                &-level[class~="intermediary"] {
+                    color: variables.$intermediary;
+                }
+    
+                &-level[class~="hard"] {
+                    color: variables.$hard;
+                }
+                
+                &-code {
+                    color: variables.$second-color;
+                    font-size: 25px;
+                }
+
+                &-btn {
+                    display: inline-block;
+                    margin: 10px;
+                    background-color: variables.$second-color;
+                    padding: .1em 2em;
+                    border-radius: 10px;
+                    transition: all .4s;
+                    font-size: 1.2em;
+
+                    &:hover {
+                        background-color: #544881;
+                    }
+
+                    @include mixins.cell {
+                        padding: .8em 4em;
+                    }
+                }
+            }
+        
+        }
+                
+    }
+}
