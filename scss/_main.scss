@@ -81,6 +81,7 @@
         justify-content: center;
         height: 100vh;
         padding-left: 100px;
+        position: relative;
 
         @include mixins.cell {
             flex-direction: column;
@@ -94,17 +95,27 @@
             @include mixins.flex-center;
             background: linear-gradient(#3A2883, rgba(0,0,0,0.8));
             padding: 1em;
-
+            @include mixins.cell {
+                max-width: 100%;
+            }
             &:hover {
                 filter: drop-shadow(1px 1px 3px #4a3a8b);
             }
         }
-        
-        &-second {
-          transform: translate(-100px, 200px);
-
+        &-first {
+            position: absolute;
+            top: 0;
+            left: 10%;
             @include mixins.cell {
-                transform: none;
+                position: unset;
+            }
+        }
+        &-second {
+            top: 200px;
+            left: 42%;
+            position: absolute;
+            @include mixins.cell {
+                position: unset;
             }
         }
     }

@@ -4,6 +4,9 @@
 .body-content {
     display: flex;
 
+    #mainCadastro{
+        height: unset;
+    }
     .main {
         max-width: 55%;
         width: 100%;
