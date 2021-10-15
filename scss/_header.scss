@@ -77,17 +77,18 @@
                 display: none;
 
                 &.active {
-                    display: block;
-                    width: 35vh;
+                    display: flex;
                     height: 45vh;
                     position: absolute;
                     flex-direction: column;
                     align-items: flex-start;
                     background-color: #191919;
                     border: 1px solid variables.$primary-color;
+                    border-right: none;
                     padding: 2.5em;
+                    padding-right: 1.5em;
                     top: 80px;
-                    right: -32px;
+                    right: 0px;
                     z-index: 1;
                     animation: descendo 1s linear;
                     @include mixins.animationMenu;
