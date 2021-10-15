@@ -5,15 +5,21 @@
     @include mixins.flex-between;   
     padding: 1em 2em ;
     @include mixins.tablet {
-        padding: 1em 2em;
+        padding: 1em;
     }
     @include mixins.cell {
         padding: 1em;
     }
     &-nav {
-        @include mixins.flex-between;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        width: 60%;
         gap: 30px;
+
+        @include mixins.tablet {
+            justify-content: space-between;
+            width: 100%;
+        }
 
         &-logo{
             display: flex;
@@ -21,9 +27,6 @@
 
             h1 {
                 font-size: 23px;
-                @include mixins.cell {
-                    display: none;
-                }
             }
 
             img{
@@ -33,26 +36,94 @@
             }
         }
 
-        ul {
-            @include mixins.flex-center;
-            gap:30px;
-            @include mixins.cell {
-                display: none;
+        .menu-mobile {
+            display: none;
+
+            @include mixins.tablet {
+                display: block;
             }
+
+            ion-icon {
+                color: variables.$primary-color;
+                font-size: 65px;
+
+                &:nth-child(1){
+                    animation: descendoTexto .2s linear;
+                    @include mixins.animationMenuLi;
+                }
+
+                &.active {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                    animation: descendoTexto .2s linear;
+                    @include mixins.animationMenuLi;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            gap:30px;
+            @include mixins.tablet {
+                display: none;
+
+                &.active {
+                    display: block;
+                    width: 35vh;
+                    height: 45vh;
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-color: #191919;
+                    border: 1px solid variables.$primary-color;
+                    padding: 2.5em;
+                    top: 80px;
+                    right: -32px;
+                    z-index: 1;
+                    animation: descendo 1s linear;
+                    @include mixins.animationMenu;
+                }
+            }
+
+            .mobile {
+                display: none;
+
+                @include mixins.tablet {
+                    display: block;
+                }
+            }
+
             li{
                 a {
                     @include mixins.align-center;
                     font-size: 20px;
+                    @include mixins.tablet {
+                        margin-bottom: 10px;
+                    }
+
+                    ion-icon {
+                        font-size: 25px;
+                        padding-right: 7px;
+                    }
 
                     &:hover {
                         color: variables.$second-color;
                     }
                     
-                img{
-                    margin-right: 10px;
-                    width: 1.4em;
-                    height: 1.4em;
-                }
+                     img {
+                        margin-right: 10px;
+                        width: 1.4em;
+                        height: 1.4em;
+                    }
                 }
 
             }
@@ -60,10 +131,28 @@
     }
 
     &-sign {
-        @include mixins.flex-center;
+        display: flex;
         gap: 10px;
+        padding-right: 20px;
 
-        a:hover {
+        @include mixins.tablet {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        a {
+            font-size: 20px;
+            display: flex;
+
+            ion-icon {
+                font-size: 25px;
+                padding-right: 5px;
+            }
+
+        &:hover {
                 color: variables.$second-color;
             }
 
@@ -79,4 +168,5 @@
             }
         }
     }
+}
 }
