@@ -1,10 +1,10 @@
-@use 'variables.scss';
-@use 'mixins.scss';
+@use '../variables.scss';
+@use '../mixins.scss';
 
 .header {
     @include mixins.flex-between;   
     padding: 1em 2em ;
-    @include mixins.tablet {
+    @media (max-width:850px) {
         padding: 1em;
     }
     @include mixins.cell {
@@ -16,7 +16,7 @@
         width: 60%;
         gap: 30px;
 
-        @include mixins.tablet {
+        @media (max-width:850px) {
             justify-content: space-between;
             width: 100%;
         }
@@ -39,7 +39,7 @@
         .menu-mobile {
             display: none;
 
-            @include mixins.tablet {
+            @media (max-width: 850px) {
                 display: block;
             }
 
@@ -73,7 +73,7 @@
         ul {
             display: flex;
             gap:30px;
-            @include mixins.tablet {
+            @media (max-width:850px) {
                 display: none;
 
                 &.active {
@@ -97,7 +97,7 @@
             .mobile {
                 display: none;
 
-                @include mixins.tablet {
+                @media (max-width:850px) {
                     display: block;
                 }
             }
@@ -106,7 +106,7 @@
                 a {
                     @include mixins.align-center;
                     font-size: 20px;
-                    @include mixins.tablet {
+                    @media (max-width:850px) {
                         margin-bottom: 10px;
                     }
 
@@ -135,7 +135,7 @@
         gap: 10px;
         padding-right: 20px;
 
-        @include mixins.tablet {
+        @media (max-width:850px) {
             display: none;
 
             &.active {

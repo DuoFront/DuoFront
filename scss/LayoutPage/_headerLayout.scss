@@ -1,5 +1,5 @@
-@use 'variables.scss';
-@use 'mixins.scss';
+@use '../variables.scss';
+@use '../mixins.scss';
 
 .header {
     @include mixins.flex-between;   
@@ -87,7 +87,7 @@
                     border: 1px solid variables.$primary-color;
                     padding: 2.5em;
                     top: 60px;
-                    right: -32px;
+                    right: 0;
                     z-index: 1;
                     animation: descendo 1s linear;
                     @include mixins.animationMenu;
