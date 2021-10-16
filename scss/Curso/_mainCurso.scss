@@ -1,5 +1,5 @@
-@use 'mixins.scss';
-@use 'variables.scss';
+@use '../mixins.scss';
+@use '../variables.scss';
 
 .body-content {
 
@@ -41,9 +41,6 @@
                 margin-bottom: .5em;
             }
             
-            &-text {
-
-            }
         }
 
         

@@ -44,7 +44,7 @@ body strong {
   align-items: center;
   padding: 1em 2em;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header {
     padding: 1em;
   }
@@ -60,7 +60,7 @@ body strong {
   width: 60%;
   gap: 30px;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-nav {
     justify-content: space-between;
     width: 100%;
@@ -81,7 +81,7 @@ body strong {
 .header-nav .menu-mobile {
   display: none;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-nav .menu-mobile {
     display: block;
   }
@@ -127,7 +127,7 @@ body strong {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-nav ul {
     display: none;
   }
@@ -166,7 +166,7 @@ body strong {
 .header-nav ul .mobile {
   display: none;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-nav ul .mobile {
     display: block;
   }
@@ -176,7 +176,7 @@ body strong {
   align-items: center;
   font-size: 20px;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-nav ul li a {
     margin-bottom: 10px;
   }
@@ -198,7 +198,7 @@ body strong {
   gap: 10px;
   padding-right: 20px;
 }
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header-sign {
     display: none;
   }
@@ -236,12 +236,23 @@ body strong {
   display: flex;
   flex-direction: column;
   position: fixed;
-  padding: 130px 0;
+  padding: 90px 0 70px;
 }
 @media (max-width: 850px) {
   .aside {
     display: none;
+    min-width: 50%;
+    background-color: #000;
+    right: 0;
   }
+}
+@media (max-width: 550px) {
+  .aside {
+    min-width: 300px;
+  }
+}
+.aside.active {
+  display: block;
 }
 .aside-title {
   font-size: 52px;
@@ -260,10 +271,16 @@ body strong {
   font-size: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+.aside-lista-item:hover {
+  background-color: #777;
+}
 .aside-lista-item:nth-child(1) {
   margin: 40px 0 0;
   background-color: #3A2883;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.aside-lista-item:nth-child(1):hover {
+  background-color: purple;
 }
 
 .body-content #mainCadastro {
