@@ -282,6 +282,7 @@ body strong {
 }
 .aside-lista {
   width: 100%;
+  margin-top: 40px;
 }
 .aside-lista-item {
   padding: 1em;
@@ -291,12 +292,12 @@ body strong {
 .aside-lista-item:hover {
   background-color: #777;
 }
-.aside-lista-item:nth-child(1) {
-  margin: 40px 0 0;
+
+.aula-ativa {
   background-color: #3A2883;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
-.aside-lista-item:nth-child(1):hover {
+.aula-ativa:hover {
   background-color: purple;
 }
 
@@ -322,6 +323,7 @@ body strong {
     position: static;
     margin-bottom: 40px;
     height: unset;
+    padding: 0px;
   }
 }
 @media (max-width: 550px) {

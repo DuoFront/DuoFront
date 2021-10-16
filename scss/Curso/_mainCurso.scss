@@ -23,6 +23,7 @@
             position: static;
             margin-bottom: 40px;
             height: unset;
+            padding: 0px;
         }
         @include mixins.cell {
             padding: 0;

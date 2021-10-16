@@ -38,7 +38,7 @@
   }
   &-lista {
       width: 100%;
-
+      margin-top: 40px;
     &-item {
         padding: 1em;
         font-size: 20px;
@@ -46,15 +46,15 @@
         &:hover{
           background-color: #777;
         }
-        &:nth-child(1) {
-            margin: 40px 0 0;
-            background-color: variables.$second-color;
-            border-top: 1px solid rgba(0,0,0,0.2); 
-            &:hover{
-              background-color: purple;
-            } 
-        }
+        
     }
   }
 
+}
+.aula-ativa {
+  background-color: variables.$second-color;
+  border-top: 1px solid rgba(0,0,0,0.2); 
+  &:hover{
+    background-color: purple;
+  } 
 }
