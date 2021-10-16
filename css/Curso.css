@@ -242,7 +242,6 @@ body strong {
   .aside {
     display: none;
     min-width: 50%;
-    background-color: #000;
     right: 0;
   }
 }

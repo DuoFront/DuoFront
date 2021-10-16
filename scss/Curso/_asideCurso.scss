@@ -17,7 +17,6 @@
   @media (max-width: 850px) {
     display: none;
     min-width: 50%;
-    background-color: #000;
     right: 0;
   }
   @include mixins.cell {
