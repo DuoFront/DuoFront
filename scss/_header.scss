@@ -77,11 +77,12 @@
                 display: none;
 
                 &.active {
-                    display: block;
+                    display: flex;
                     width: 35vh;
                     height: 45vh;
                     position: absolute;
                     flex-direction: column;
+                    justify-content: space-around;
                     align-items: flex-start;
                     background-color: #191919;
                     border: 1px solid variables.$primary-color;
