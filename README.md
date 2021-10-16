@@ -45,7 +45,7 @@ Também sabemos que pensar em um layout geralmente é uma tarefa maior do que fa
 
 Entre em contato conosco:
 
-- [![Linkedin Badge](https://img.shields.io/badge/-PaolaGuedes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paola-guedes-84885b186/)](https://www.linkedin.com/in/paolaguedes/) 
+- [![Linkedin Badge](https://img.shields.io/badge/-PaolaGuedes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paola-guedes-84885b186/)](https://www.linkedin.com/in/paola-guedes-84885b186/) 
 - [![Linkedin Badge](https://img.shields.io/badge/-AlexSant'Anna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alex-ricardo-rodrigues-sant-anna/)](https://www.linkedin.com/in/alex-ricardo-rodrigues-sant-anna/) 
 
 
