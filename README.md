@@ -14,7 +14,6 @@ Também sabemos que pensar em um layout geralmente é uma tarefa maior do que fa
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/53832972/137567163-21ea8726-c7d0-443f-a67c-2dfdf8c85673.png" width="600">
 <img src="https://user-images.githubusercontent.com/53832972/137565758-010860ef-f0bc-4002-b5dc-23a4506f12ba.png" width="600">
 <img src="https://user-images.githubusercontent.com/53832972/137567006-7dfbd711-0f4e-44b4-a536-52b624925319.png" width="600">
 
