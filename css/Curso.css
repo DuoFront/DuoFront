@@ -366,6 +366,30 @@ body strong {
     padding-left: 0;
   }
 }
+.body-content .main .first-section .img-curso {
+  max-width: 700px;
+  width: 100%;
+}
+.body-content .main .first-section .lista-curso-item {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: silver;
+}
+.body-content .main .first-section .lista-curso2 {
+  margin-bottom: 30px;
+}
+.body-content .main .first-section .lista-curso2-item {
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: silver;
+}
+.body-content .main .first-section .maior {
+  font-size: 1.9em;
+}
 .body-content .main .first-section-subtitle {
   font-size: 2em;
   margin: 1em 0;
@@ -380,7 +404,7 @@ body strong {
   margin-bottom: 2em;
 }
 .body-content .main .first-section-text {
-  margin: 1.5em 0;
+  margin: 1em 0;
   line-height: 2em;
   font-size: 18px;
   color: silver;
