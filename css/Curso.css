@@ -132,7 +132,7 @@ html body strong {
 }
 .header-nav .menu-mobile ion-icon:nth-child(2) {
   display: none;
-  animation: descendoTexto 0.2s linear;
+  animation: descendoTexto 1s ease-in;
 }
 @keyframes descendoTexto {
   0% {
@@ -258,12 +258,26 @@ html body strong {
   flex-direction: column;
   position: fixed;
   padding: 90px 0 70px;
+  transition: all 1s ease-in;
+}
+@keyframes menuCurso {
+  from {
+    display: none;
+    opacity: 0;
+    right: -25%;
+  }
+  to {
+    display: flex;
+    opacity: 1;
+    right: 0;
+  }
 }
 @media (max-width: 850px) {
   .aside {
     display: none;
     min-width: 50%;
     right: 0;
+    animation: menuCurso 0.5s linear;
   }
 }
 @media (max-width: 550px) {
@@ -286,10 +300,43 @@ html body strong {
 .aside-lista {
   width: 100%;
   margin-top: 40px;
+  transition: all 1s linear;
+}
+@media (max-width: 850px) {
+  .aside-lista {
+    animation: descendo 0.7s linear;
+  }
+  @keyframes descendo {
+    0% {
+      -webkit-height: 0;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+    30% {
+      width: 35vh;
+    }
+    45% {
+      -webkit-height: 45vh;
+      height: 45vh;
+      opacity: 1;
+    }
+  }
 }
 .aside-lista-item {
   font-size: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  animation: descendoTexto 0.7s linear;
+}
+@keyframes descendoTexto {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
 }
 .aside-lista-item-link {
   display: block;
@@ -348,6 +395,17 @@ html body strong {
 }
 .body-content .main .first-section {
   padding: 0 2.8em;
+  animation: descendoTexto 0.5s linear;
+}
+@keyframes descendoTexto {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
 }
 @media (max-width: 550px) {
   .body-content .main .first-section {

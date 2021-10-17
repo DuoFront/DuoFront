@@ -42,6 +42,9 @@
 
         .first-section {
             padding: 0 2.8em;  
+            animation: descendoTexto .5s linear;
+            @include mixins.animationMenuLi;
+
             @include mixins.cell {
                 padding: 1em;
             }
