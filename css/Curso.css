@@ -29,12 +29,15 @@ strong {
   font-weight: normal;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   font-family: "Robot", sans-serif;
 }
-body strong {
+html body strong {
   color: #3A2883;
 }
 
@@ -366,6 +369,46 @@ body strong {
     padding-left: 0;
   }
 }
+.body-content .main .first-section .img-curso {
+  max-width: 700px;
+  width: 100%;
+}
+.body-content .main .first-section .lista-curso {
+  padding: 0 1em;
+}
+.body-content .main .first-section .lista-curso-item {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: silver;
+}
+.body-content .main .first-section .lista-curso2 {
+  padding: 0 1em;
+  margin-bottom: 30px;
+}
+.body-content .main .first-section .lista-curso2-item {
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: silver;
+}
+.body-content .main .first-section .maior {
+  font-size: 1.9em;
+}
+.body-content .main .first-section .iframe-codepen {
+  max-width: 700px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+  margin: 1em 0;
+  padding: 1em;
+}
 .body-content .main .first-section-subtitle {
   font-size: 2em;
   margin: 1em 0;
@@ -380,7 +423,7 @@ body strong {
   margin-bottom: 2em;
 }
 .body-content .main .first-section-text {
-  margin: 1.5em 0;
+  margin: 1em 0;
   line-height: 2em;
   font-size: 18px;
   color: silver;

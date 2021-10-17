@@ -12,7 +12,7 @@
         height: 100vh;
         position: relative;
         left: 25%;
-        padding: 1em;
+        padding: 1em;      
 
         @include mixins.pc {
             height: unset;
@@ -61,6 +61,44 @@
                     padding-left: 0;
                 }
             }
+            .img-curso {
+                max-width: 700px;
+                width: 100%;
+            }
+
+            .lista-curso {
+                padding: 0 1em;
+                &-item {
+                    list-style-type: disc;
+                    list-style-position: inside;
+                    font-size: 1.1em;
+                    line-height: 1.6;
+                    color: silver;
+                }
+            }
+            .lista-curso2 {
+                padding: 0 1em;
+                margin-bottom: 30px;
+                &-item {
+                    list-style-type:decimal;
+                    list-style-position: inside;
+                    font-size: 1.1em;
+                    line-height: 1.6;
+                    color: silver;
+                }
+            }
+            .maior {
+                font-size: 1.9em;
+            }
+            .iframe-codepen {
+                max-width: 700px; 
+                width: 100%; 
+                height: 300px; 
+                @include mixins.flex-center;
+                border: 2px solid; 
+                margin: 1em 0; 
+                padding: 1em;
+            }
             &-subtitle{
                 font-size: 2em;
                 margin: 1em 0;
@@ -76,7 +114,7 @@
             }
             &-text{
 
-                margin: 1.5em 0;
+                margin: 1em 0;
                 line-height: 2em;
                 font-size: 18px;
                 color: silver;
