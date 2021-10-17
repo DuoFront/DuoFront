@@ -1,0 +1,131 @@
+@use '../mixins.scss';
+@use '../variables.scss';
+
+.body-content {
+
+    .main {
+        max-width: 75%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 25%;
+        padding: 1em;  
+         
+ 
+
+        @include mixins.pc {
+            height: unset;
+        }
+
+        @media (max-width: 850px) {
+            max-width: 100%;
+            position: static;
+            margin-bottom: 40px;
+            height: unset;
+            padding: 0px;
+        }
+        @include mixins.cell {
+            padding: 0;
+        }
+
+        &-title {
+            font-size: 2rem;
+            padding: 1em 0;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+
+        .title {
+            padding: 1em;
+        }
+        // aqui começa a estilizacao do quiz
+        .quiz-container {
+            background-color: variables.$bg-card;
+            max-width: 700px;
+            margin: 7em 3em 5em;
+            padding: 3em;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px variables.$second-color;
+            position: relative;
+
+            &-title {
+                font-size: 1.5em;
+                position: absolute;
+                background-color: variables.$second-color;
+                position: absolute;
+                display: block;
+                left: -10px;
+                top: 20px;
+                padding: .5em;
+            }
+
+            &-question {
+                position: absolute;
+                top: 80px;
+                font-size: 1.3em;
+            }
+
+            &-lista {
+                margin-top: 3em;
+                color: white;
+
+                &-item {
+                    line-height: 1.8;
+
+                        .radio-btn-btn {
+
+                            &:checked ~ label {
+                                background-color: variables.$primary-color;
+                                color: #504091;
+                                padding: .4em .1em;
+                                border-radius: 5px;
+                            }
+                        }
+
+                        label {
+                            cursor: pointer;
+                        }
+                }
+            }
+
+            &-btn {
+                display: inline-block;
+                margin-top: 2em;
+                padding: .5em 1em;
+                border-radius: 5px;
+                color: variables.$primary-color;
+                background-color: variables.$second-color;
+                cursor: pointer;
+                transition: all 1s;
+
+                &:hover {
+                    background-color: #504091;
+                    box-shadow: 1px 1px 4px #504091;
+                }
+            }
+            .score{
+                font-size: 2em;
+                margin-top: 2em;
+                color: white;
+                text-align: center;
+            }
+            .btnScore-container {
+                margin: 0 auto;
+                max-width: 300px;
+            }
+            .btnScore {
+                padding: 1em 2em;
+                margin-right: 1em;
+            }
+            .imgScore {
+                max-width: 400px;
+                filter: drop-shadow(1px 1px 2px white);
+                animation: winner 1s linear infinite;
+                @include mixins.animationMenuLi;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

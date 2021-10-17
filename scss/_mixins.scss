@@ -85,6 +85,15 @@
     overflow: hidden;
 }
 
+@mixin cardQuiz {
+    background-color: variables.$second-color;
+    position: absolute;
+    display: block;
+    left: -10px;
+    top: 20px;
+    padding: 1em;
+}
+
 
 @mixin pc() {
     @media(max-width:960px){
@@ -131,5 +140,18 @@
           opacity: 1; 
           display: block;
         }
+    }
+
+    @keyframes winner {
+        0% {
+            opacity: 0; 
+            display: none; 
+            transform: translateX(-45deg);
+           }
+          100% {
+            opacity: 1; 
+            display: block;
+            transform: translateX(45deg);
+          }
     }
 }
