@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/Quiz.css" />
+    <!-- JS-->
+    <script type='text/javascript' src='../../js/quiz.js' defer></script>
+    <script type="text/javascript" src="../../js/menuCurso.js" defer></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>DuoFront :: Curso HTML</title>
+  </head>
+  <body>
+    <div class="body-content">
+      <aside class="aside">
+        <h2 class="aside-title">HTML</h2>
+        <ul class="aside-lista menu-navigation">
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula1.html">Introdução</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula2.html">Tags de texto</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link " href="aula3.html"
+              >Tags de conteúdo</a
+            >
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link " href="aula4.html">Listas</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula5.html">Formulário</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula6.html">Tabela</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula7.html"
+              >Iframes, video e audio</a
+            >
+          </li>
+          <li class="aside-lista-item aula-ativa">
+            <a class="aside-lista-item-link" href="quizFinal.html"
+              >Teste de conhecimento</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <nav class="header-nav">
+            <a href="../../index.html" class="header-nav-logo">
+              <img src="../../img/logo.png" alt="logo duofront" />
+              <h1>DuoFront</h1>
+            </a>
+            <div class="menu-mobile">
+              <ion-icon
+                class="menu-mobile-outline menu"
+                name="menu-outline"
+              ></ion-icon>
+              <ion-icon
+                class="menu-mobile-close close"
+                name="close-outline"
+              ></ion-icon>
+            </div>
+            <ul>
+              <li class="quiz-container-lista-item">
+                <a href="../../pages/layouts.html"
+                  ><img src="../../img/dvr.svg" alt="" />Layouts</a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/login.html"
+                  ><ion-icon name="enter-outline"></ion-icon>
+                  <p>Entrar</p></a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/cadastro.html"
+                  ><ion-icon name="person-circle-outline"></ion-icon>
+                  <p>Cadastrar</p></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <section class="header-sign">
+            <a href="../../pages/login.html"
+              ><ion-icon name="enter-outline"></ion-icon>
+              <p>Entrar</p></a
+            >
+            <a href="../../pages/cadastro.html"
+              ><ion-icon name="person-circle-outline"></ion-icon>
+              <p>Cadastrar</p></a
+            >
+          </section>
+        </header>
+        <section class="quiz-container" id="quiz">
+            <h2 id="question" class="quiz-container-title"></h2>
+            <ul class="quiz-container-lista">
+                <li class="quiz-container-lista-item">
+                        <input class="radio-btn-btn answer" type="radio" id="a" name="answer">
+                    <label id="a_text" for="a"></label>
+            </li>
+                <li class="quiz-container-lista-item">
+                        <input class="radio-btn-btn answer" type="radio" id="b" name="answer">
+                    <label  id="b_text" for="b"></label>
+            </li>
+                <li class="quiz-container-lista-item">
+                        <input class="radio-btn-btn answer" type="radio" id="c" name="answer">
+                    <label  id="c_text" for="c"></label>
+            </li>
+                <li class="quiz-container-lista-item">
+                        <input class="radio-btn-btn answer" type="radio" id="d" name="answer">
+                    <label  id="d_text" for="d"></label>
+            </li>
+            </ul>
+            <a href="#q2"><button id="sub" class=" quiz-container-btn">Próxima</button></a>
+         </section>
+      </main>
+    </div>
+  </body>
+</html>
