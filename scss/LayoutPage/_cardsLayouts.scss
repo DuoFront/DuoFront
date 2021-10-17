@@ -10,7 +10,7 @@
         margin: 70px 20px;
         font-size: 45px;
     }
-
+    
     .main-cards {
         @include mixins.flex-center;
         flex-wrap: wrap;
