@@ -36,17 +36,15 @@
             <a class="aside-lista-item-link" href="aula1.html">Introdução</a>
           </li>
           <li class="aside-lista-item">
-            <a class="aside-lista-item-link aula-ativa" href="aula2.html"
-              >Tags de texto</a
-            >
+            <a class="aside-lista-item-link" href="aula2.html">Tags de texto</a>
           </li>
           <li class="aside-lista-item">
-            <a class="aside-lista-item-link" href="aula3.html"
+            <a class="aside-lista-item-link " href="aula3.html"
               >Tags de conteúdo</a
             >
           </li>
           <li class="aside-lista-item">
-            <a class="aside-lista-item-link" href="aula4.html">Listas</a>
+            <a class="aside-lista-item-link aula-ativa" href="aula4.html">Listas</a>
           </li>
           <li class="aside-lista-item">
             <a class="aside-lista-item-link" href="aula5.html">Formulário</a>
@@ -109,118 +107,89 @@
             >
           </section>
         </header>
-        <h2 class="main-title title">Tags de texto</h2>
+        <h2 class="main-title title">Listas</h2>
         <section class="first-section">
           <p class="first-section-text">
-            Bem vindo a sua primeira lição! Aqui iremos abordar sobre as
-            diferentes tags html que usamos quando tratamos de texto.
+            Listas são bem importantes para organizar ideias, não acha? 
+            Quando falamos de listas no HTML, estamos dizendo que tal conteúdo
+            se relaciona entre si, que possui uma sequência, que é uma parte 
+            organizada de uma tal seção.
           </p>
           <p class="first-section-text">
-            Esses são os elementos de cabeçalho que temos:
-          </p>
-          <p
-            class="codepen"
-            data-height="300"
-            data-theme-id="dark"
-            data-default-tab="html,result"
-            data-slug-hash="RwZregg"
-            data-editable="true"
-            data-user="paolaguedes"
-            class="iframe-codepen"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/paolaguedes/pen/RwZregg">
-                tags de texto</a
-              >
-              by paolaguedes (<a href="https://codepen.io/paolaguedes"
-                >@paolaguedes</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-          <p class="first-section-text">
-            Sua ordem vai do mais importante para o menos. Dessa forma, o h1 é
-            utilizado quando queremos tratar de títulos, o h2 em subtítulos e
-            assim por diante. Note também que por padrão essas tags já tem um
-            tamanho pré-estabelecido, <strong>futuramente</strong> veremos
-            também como personalizar isso.
+              Por exemplo, vamos dizer que eu tenho um site de receitas, ao 
+              detalhar o passo a passo dos ingredientes, em vez de usar vários
+              parágrafos é semânticamente correto usar listas. Mesmo que visualmente
+              o resultado possa ser igual.
           </p>
           <p class="first-section-text">
-            Outra tag muito importante é a &lt;p&gt; que indica que um parágrafo
-            está sendo adicionando ao corpo da nossa página.
-          </p>
-          <p class="first-section-text">
-            A tag &lt;a&gt; indica um link. E para adicionarmos o caminho do
-            link usamos o atributo href=" caminho " dentro da tag a. Por padrão,
-            a página que linkamos abre na guia atual, mudamos esse padrão ao por
-            o atributo target="_blank".
-          </p>
-          <img
-            class="img-curso"
-            src="../../img/cursoHTML/text.png"
-            alt="paragrafo e link"
-          />
-          <p class="first-section-text">
-            Existem também tags próprias do html que servem para dar uma
-            estilizada nos textos criados. São elas:
-          </p>
+            Gosto de dizer que não é apenas fazer um layout bonito, mas sim saber
+            programar uma boa estrutura por trás disso, até porque como vimos na seção
+            <a href="aula3.html">Tags de conteúdo</a> a semântica ajuda no <a
+            class="purple"
+            href="https://resultadosdigitais.com.br/especiais/o-que-e-seo/"
+            target="_blank"
+            >SEO</a>.
+        </p>
+        <p class="first-section-text">
+            Temos as seguintes opções de listas em HTML:
+        </p>
           <ul class="lista-curso">
-            <li class="lista-curso-item">strong : deixa o texto em negrito;</li>
-            <li class="lista-curso-item">em : deixa o texto em itálico;</li>
             <li class="lista-curso-item">
-              b : deixa o texto em negrito (não usamos mais);
+              ul: define listas não ordenadas;
             </li>
             <li class="lista-curso-item">
-              i : deixa o texto em itálico (não usamos mais);
+              ol: define listas ordenadas;
+            </li>
+            <li class="lista-curso-item">
+              dl: define uma lista de definição/descrição (como um FAQ ou glossário).
             </li>
           </ul>
-          <h2 class="first-section-text maior">
-            <strong>Vamos praticar?</strong>
-          </h2>
-          <ol class="lista-curso2">
-            <li class="lista-curso2-item">
-              Abra o
-              <a href="https://codepen.io" target="_blank">Codepen</a> (ou use o
-              campo de código abaixo, sim ele é editável);
-            </li>
-            <li class="lista-curso2-item">
-              Se abriu o Codepen clique em <strong>Start Coding</strong> no menu
-              lateral esquerdo;
-            </li>
-            <li class="lista-curso2-item">Digite o código abaixo no HTML;</li>
-            <li class="lista-curso2-item">
-              Crie seu próprio código usando sua criatividade! (exemplo: crie um
-              currículo)
-            </li>
-          </ol>
-
-          <p
-            class="codepen"
-            data-height="300"
-            data-theme-id="dark"
-            data-default-tab="html,result"
-            data-slug-hash="ExvPerJ"
-            data-editable="true"
-            data-user="paolaguedes"
-            class="iframe-codepen"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/paolaguedes/pen/ExvPerJ"> Untitled</a>
-              by paolaguedes (<a href="https://codepen.io/paolaguedes"
-                >@paolaguedes</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
+          <h2 class="main-title">UL - Lista não ordenada</h2>
+          <p class="first-section-text">
+              Recebe como filhos as tags &lt;li&gt;, que podem receber qualquer 
+              tag dentro, como &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, entre outras.
+              Inclusive você pode fazer uma lista dentro de uma lista.
           </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-        </section>
+          <img class="img-curso" src="../../img/cursoHTML/lista.png" alt="essa é um exemplo de lista nao ordenada">
+          <h2 class="main-title">OL - Lista ordenada</h2>
+          <p class="first-section-text">
+              Recebe como filhos as tags &lt;li&gt;, que podem receber qualquer 
+              tag dentro, como &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, entre outras.
+              Inclusive você pode fazer uma lista dentro de uma lista. Aqui as tags 
+              &lt;li&gt; vem por padrão numeradas.
+          </p>
+          <img class="img-curso" src="../../img/cursoHTML/listaol.png" alt="essa é um exemplo de lista nao ordenada">
+
+          <h2 class="main-title">DL - Lista de definição</h2>
+          <p class="first-section-text">
+              Recebe como filhos as tags &lt;dt&gt;, para definir o título da definição/descrição, 
+              e &lt;dd&gt; que é a definição/descrição referente ao título.
+          </p>
+          <img class="img-curso" src="../../img/cursoHTML/listadl.png" alt="essa é um exemplo de lista nao ordenada">
+          <p class="first-section-text">
+            Agora você já pode incrementar melhor o site que você fez anteriormente colocando listas
+            nas suas seções. Algumas ideias:
+         </p>
+         <ul class="lista-curso">
+            <li class="lista-curso-item">
+              Faça um site de receitas;
+            </li>
+            <li class="lista-curso-item">
+              Faça uma lista de compras;
+            </li>
+            <li class="lista-curso-item">
+              Faça uma lista de habilidades/formações em seu currículo.
+            </li>
+          </ul>
+          <p class="first-section-text">
+            Abaixo deixarei o bloco de código editável para isso, ou abra o <a href="https://codepen.io" target="_blank">Codepen</a>.
+         </p>
+          <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="rNzxXxJ" data-editable="true" data-user="paolaguedes" class="iframe-codepen">
+            <span>See the Pen <a href="https://codepen.io/paolaguedes/pen/rNzxXxJ">
+            código vazio</a> by paolaguedes (<a href="https://codepen.io/paolaguedes">@paolaguedes</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         <footer class="footer">
           <p>&copy; copyright, 2021</p>
           <div class="footer-names">

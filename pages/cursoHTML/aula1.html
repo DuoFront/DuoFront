@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/Curso.css" />
     <!-- JS-->
-    <script type='text/javascript' src='../../js/menuCurso.js' defer></script>
+    <script type="text/javascript" src="../../js/menuCurso.js" defer></script>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,111 +17,202 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- ICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>DuoFront :: Curso HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="body-content">
-        <aside class="aside">
-            <h2 class="aside-title">HTML</h2>
-            <ul class="aside-lista menu-navigation">
-              <li class="aside-lista-item aula-ativa"><a href="aula1.html">Introdução</a></li>
-              <li class="aside-lista-item "><a href="aula2.html">Tags de texto</a></li>
-              <li class="aside-lista-item"><a href="#0">Tags de conteúdo</a></li>
-              <li class="aside-lista-item"><a href="#0">Lista</a></li>
-              <li class="aside-lista-item"><a href="#0">Formulário</a></li>
-              <li class="aside-lista-item"><a href="#0">Tabela</a></li>
-              <li class="aside-lista-item"><a href="#0">Iframes, video e audio</a></li>
+      <aside class="aside">
+        <h2 class="aside-title">HTML</h2>
+        <ul class="aside-lista menu-navigation">
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link aula-ativa" href="aula1.html"
+              >Introdução</a
+            >
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula2.html">Tags de texto</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula3.html"
+              >Tags de conteúdo</a
+            >
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula4.html">Listas</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula5.html">Formulário</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula6.html">Tabela</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula7.html"
+              >Iframes, video e audio</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <nav class="header-nav">
+            <a href="../../index.html" class="header-nav-logo">
+              <img src="../../img/logo.png" alt="logo duofront" />
+              <h1>DuoFront</h1>
+            </a>
+            <div class="menu-mobile">
+              <ion-icon
+                class="menu-mobile-outline menu"
+                name="menu-outline"
+              ></ion-icon>
+              <ion-icon
+                class="menu-mobile-close close"
+                name="close-outline"
+              ></ion-icon>
+            </div>
+            <ul>
+              <li>
+                <a href="../../pages/layouts.html"
+                  ><img src="../../img/dvr.svg" alt="" />Layouts</a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/login.html"
+                  ><ion-icon name="enter-outline"></ion-icon>
+                  <p>Entrar</p></a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/cadastro.html"
+                  ><ion-icon name="person-circle-outline"></ion-icon>
+                  <p>Cadastrar</p></a
+                >
+              </li>
             </ul>
-        </aside>
-        <main class="main">
-          <header class="header">
-            <nav class="header-nav">
-              <a href="../../index.html"class="header-nav-logo">
-                <img src="../../img/logo.png" alt="logo duofront" />
-                <h1>DuoFront</h1>
-              </a>
-              <div class="menu-mobile">
-                <ion-icon class="menu-mobile-outline menu" name="menu-outline"></ion-icon>
-                <ion-icon class="menu-mobile-close close" name="close-outline"></ion-icon>
-              </div>
-                <ul>
-                <li>
-                  <a href="../../pages/layouts.html"><img src="../../img/dvr.svg" alt="" />Layouts</a>
-                </li>
-                <li class="mobile"><a href="../../pages/login.html"><ion-icon name="enter-outline"></ion-icon><p>Entrar</p></a></li>
-                <li class="mobile"><a href="../../pages/cadastro.html"><ion-icon name="person-circle-outline"></ion-icon><p>Cadastrar</p></a></li>
-              </ul>
-            </nav>
-            <section class="header-sign ">
-              <a href="../../pages/login.html"><ion-icon name="enter-outline"></ion-icon><p>Entrar</p></a>
-              <a href="../../pages/cadastro.html"><ion-icon name="person-circle-outline"></ion-icon><p>Cadastrar</p></a>
-            </section>
-          </header>
-          <h2 class="main-title">Introdução ao HTML</h2>
-          <section class="first-section">
-            <blockquote class="first-section-cite" cite="https://www.mozilla.org/en-US">
-             <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. </p> 
-            </blockquote>
-            <img class="hipperlink" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sistema_hipertextual.jpg/220px-Sistema_hipertextual.jpg" alt="hipperlink">
-            <p class="first-section-text">
-              'HyperText' se refere a links que conectam uma página a outra na internet, sendo uma parte fundamental da web desde os primordios, inclusive, nos primeiros anos de vida da internet, a web era composta maioritariamente de links!
+          </nav>
+          <section class="header-sign">
+            <a href="../../pages/login.html"
+              ><ion-icon name="enter-outline"></ion-icon>
+              <p>Entrar</p></a
+            >
+            <a href="../../pages/cadastro.html"
+              ><ion-icon name="person-circle-outline"></ion-icon>
+              <p>Cadastrar</p></a
+            >
+          </section>
+        </header>
+        <h2 class="main-title title">Introdução ao HTML</h2>
+        <section class="first-section">
+          <blockquote
+            class="first-section-cite"
+            cite="https://www.mozilla.org/en-US"
+          >
+            <p>
+              HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
+              mais básico da web. Define o significado e a estrutura do conteúdo
+              da web.
             </p>
-            <p class="first-section-text">'Markup' é devido a sua forma de marcação, HTML é composto de elementos que seguem o padrão de: &lt;tag&gt; &lt;/tag&gt;</p> 
-            <h3 class="first-section-subtitle">Exemplo de arquivo .html</h3>
-            <img class="img-curso" src="../../img/cursoHTML/htmlBase.png" alt="codigo base html">
-            <p class="first-section-text">
-              Atualmente quase 100% da internet utiliza o HTML5 para fazer a estrutura semântica de seus sites, e SIM o número 5 é referente a sua versão atual, então também existiram HTML, HTML2, HTML3.2 e HTML4. A linguagem até mesmmo chegou a ser descontinuada em 2004 e se tornou XHTML1.0, mas então em  2007 a W3C decidiu voltou atrás novamente em sua decisão e lançou a versão 5 do HTML
-            </p>
-            <h3 class="first-section-subtitle">HTML5</h3>
-            <p  class="first-section-text">
-              A versão 5 trouxe uma maior semântica para a Linguagem de Marcação, trazendo novas tags que tornam mais facíl a leitura do conteúdo na web, tanto por usuários quanto por computadores, já outras tags de versões antigas tiveram sua importância enfatizada ou até mesmo colocadas em desuso.
-            </p>
-            <p class="first-section-text">
-              Importante saber que esta versão deixou ainda mais clara a divisão entre sêmantica, estilo e interatividade, HTML é <strong>SEMÂNTICO!!</strong>,logo seu conteúdo deve condizir com o significado da marcação, deixando as duas outras partes para o CSS e JavaScript.
-            </p>
-            <h3 class="first-section-subtitle">Data dos lançamentos oficiais</h3>
-            <table>
-              <tr>
-                  <th>Versão</th>
-                  <th>Ano</th>
-              </tr>
-              <tr>
-                  <td>HTML</td>
-                  <td>1991</td>
-              </tr>
-              <tr>
-                  <td>HTML2</td>
-                  <td>1995</td>
-              </tr>
-              <tr>
-                <td>HTML3.2</td>
-                <td>1997</td>
+          </blockquote>
+          <img
+            class="hipperlink"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sistema_hipertextual.jpg/220px-Sistema_hipertextual.jpg"
+            alt="hipperlink"
+          />
+          <p class="first-section-text">
+            'HyperText' se refere a links que conectam uma página a outra na
+            internet, sendo uma parte fundamental da web desde os primordios,
+            inclusive, nos primeiros anos de vida da internet, a web era
+            composta maioritariamente de links!
+          </p>
+          <p class="first-section-text">
+            'Markup' é devido a sua forma de marcação, HTML é composto de
+            elementos que seguem o padrão de: &lt;tag&gt; &lt;/tag&gt;
+          </p>
+          <h3 class="first-section-subtitle">Exemplo de arquivo .html</h3>
+          <img
+            class="img-curso"
+            src="../../img/cursoHTML/htmlBase.png"
+            alt="codigo base html"
+          />
+          <p class="first-section-text">
+            Atualmente quase 100% da internet utiliza o HTML5 para fazer a
+            estrutura semântica de seus sites, e SIM o número 5 é referente a
+            sua versão atual, então também existiram HTML, HTML2, HTML3.2 e
+            HTML4. A linguagem até mesmmo chegou a ser descontinuada em 2004 e
+            se tornou XHTML1.0, mas então em 2007 a W3C decidiu voltou atrás
+            novamente em sua decisão e lançou a versão 5 do HTML
+          </p>
+          <h3 class="first-section-subtitle">HTML5</h3>
+          <p class="first-section-text">
+            A versão 5 trouxe uma maior semântica para a Linguagem de Marcação,
+            trazendo novas tags que tornam mais facíl a leitura do conteúdo na
+            web, tanto por usuários quanto por computadores, já outras tags de
+            versões antigas tiveram sua importância enfatizada ou até mesmo
+            colocadas em desuso.
+          </p>
+          <p class="first-section-text">
+            Importante saber que esta versão deixou ainda mais clara a divisão
+            entre sêmantica, estilo e interatividade, HTML é
+            <strong>SEMÂNTICO!!</strong>,logo seu conteúdo deve condizir com o
+            significado da marcação, deixando as duas outras partes para o CSS e
+            JavaScript.
+          </p>
+          <h3 class="first-section-subtitle">Data dos lançamentos oficiais</h3>
+          <table>
+            <tr>
+              <th>Versão</th>
+              <th>Ano</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>1991</td>
+            </tr>
+            <tr>
+              <td>HTML2</td>
+              <td>1995</td>
+            </tr>
+            <tr>
+              <td>HTML3.2</td>
+              <td>1997</td>
             </tr>
             <tr>
               <td>HTML4</td>
               <td>1999</td>
-          </tr>
-          <tr>
-            <td>XHTML1.0</td>
-            <td>2000</td>
-        </tr>
-        <tr>
-          <td>HTML5</td>
-          <td>2013</td>
-      </tr>
+            </tr>
+            <tr>
+              <td>XHTML1.0</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>HTML5</td>
+              <td>2013</td>
+            </tr>
           </table>
-            <h3 class="first-section-subtitle">Vá mais a fundo!</h3>
-            <p class="first-section-text">Você realmente sabe a diferença das tags h1, h2, h3, h4, h5 ? vá mais a fundo no mundo HTML e descubra isso e muito mais sobre tags de texto no nosso artigo de <a href="aula2.html">Text Tags</a>, ou pode optar em por seus conhecimentos em prática fazendo um de nossos <a>Testes Rápidos</a> ou botando a mão na massa ao construir um de nossos <a href="../../pages/layouts.html">Layouts</a>.</p>
-          </section>
-          <footer class="footer">
-            <p>&copy; copyright, 2021</p>
-            <div class="footer-names">
-              <p><a>Alex</a> | <a>Paola</a></p>
-            </div>
-          </footer>
-        </main>
-      </div>
-</body>
+          <h3 class="first-section-subtitle">Vá mais a fundo!</h3>
+          <p class="first-section-text">
+            Você realmente sabe a diferença das tags h1, h2, h3, h4, h5 ? vá
+            mais a fundo no mundo HTML e descubra isso e muito mais sobre tags
+            de texto no nosso artigo de <a href="aula2.html">Text Tags</a>, ou
+            pode optar em por seus conhecimentos em prática fazendo um de nossos
+            <a>Testes Rápidos</a> ou botando a mão na massa ao construir um de
+            nossos <a href="../../pages/layouts.html">Layouts</a>.
+          </p>
+        </section>
+        <footer class="footer">
+          <p>&copy; copyright, 2021</p>
+          <div class="footer-names">
+            <p><a>Alex</a> | <a>Paola</a></p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

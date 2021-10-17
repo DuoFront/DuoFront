@@ -48,8 +48,7 @@
                 font-size: 65px;
 
                 &:nth-child(1){
-                    animation: descendoTexto .2s linear;
-                    @include mixins.animationMenuLi;
+                    transition: all 1s linear;
                 }
 
                 &.active {
@@ -64,6 +63,7 @@
 
                 &:nth-child(2) {
                     display: none;
+                    transition: all 1s linear;
                     animation: descendoTexto .2s linear;
                     @include mixins.animationMenuLi;
                 }

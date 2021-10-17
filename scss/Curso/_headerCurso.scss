@@ -64,7 +64,7 @@
 
                 &:nth-child(2) {
                     display: none;
-                    animation: descendoTexto .2s linear;
+                    animation: descendoTexto 1s ease-in;
                     @include mixins.animationMenuLi;
                 }
             }

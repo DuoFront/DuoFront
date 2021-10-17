@@ -30,14 +30,21 @@
         }
 
         &-title {
-            font-size: 40px;
-            padding: 1em;
+            font-size: 2.3rem;
+            padding: 1em 0;
             line-height: 1.2;
             font-weight: bold;
         }
 
+        .title {
+            padding: 1em;
+        }
+
         .first-section {
             padding: 0 2.8em;  
+            animation: descendoTexto .5s linear;
+            @include mixins.animationMenuLi;
+
             @include mixins.cell {
                 padding: 1em;
             }
@@ -56,6 +63,8 @@
             .hipperlink{
                 float: right;
                 padding-left: 16px;
+                border-radius: 10px;
+
                 @include mixins.cell {
                     width: 100%;
                     padding-left: 0;
@@ -64,10 +73,12 @@
             .img-curso {
                 max-width: 700px;
                 width: 100%;
+                border-radius: 10px;
             }
 
             .lista-curso {
                 padding: 0 1em;
+                margin-bottom: 20px;
                 &-item {
                     list-style-type: disc;
                     list-style-position: inside;
@@ -99,6 +110,10 @@
                 margin: 1em 0; 
                 padding: 1em;
             }
+            .purple {
+                color: variables.$second-color;
+                display: inline-block;
+            }
             &-subtitle{
                 font-size: 2em;
                 margin: 1em 0;
@@ -110,8 +125,9 @@
                 padding: 1em;
                 border-left: 5px solid variables.$second-color;
                 padding-left: 10px;
-                margin-bottom: 2em;
+                margin: 2em 0;
             }
+
             &-text{
 
                 margin: 1em 0;
