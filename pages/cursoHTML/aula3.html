@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/Curso.css" />
+    <!-- JS-->
+    <script type="text/javascript" src="../../js/menuCurso.js" defer></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>DuoFront :: Curso HTML</title>
+  </head>
+  <body>
+    <div class="body-content">
+      <aside class="aside">
+        <h2 class="aside-title">HTML</h2>
+        <ul class="aside-lista menu-navigation">
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula1.html">Introdução</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="aula2.html">Tags de texto</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link aula-ativa" href="aula3.html"
+              >Tags de conteúdo</a
+            >
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="#0">Lista</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="#0">Formulário</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="#0">Tabela</a>
+          </li>
+          <li class="aside-lista-item">
+            <a class="aside-lista-item-link" href="#0"
+              >Iframes, video e audio</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <nav class="header-nav">
+            <a href="../../index.html" class="header-nav-logo">
+              <img src="../../img/logo.png" alt="logo duofront" />
+              <h1>DuoFront</h1>
+            </a>
+            <div class="menu-mobile">
+              <ion-icon
+                class="menu-mobile-outline menu"
+                name="menu-outline"
+              ></ion-icon>
+              <ion-icon
+                class="menu-mobile-close close"
+                name="close-outline"
+              ></ion-icon>
+            </div>
+            <ul>
+              <li>
+                <a href="../../pages/layouts.html"
+                  ><img src="../../img/dvr.svg" alt="" />Layouts</a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/login.html"
+                  ><ion-icon name="enter-outline"></ion-icon>
+                  <p>Entrar</p></a
+                >
+              </li>
+              <li class="mobile">
+                <a href="../../pages/cadastro.html"
+                  ><ion-icon name="person-circle-outline"></ion-icon>
+                  <p>Cadastrar</p></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <section class="header-sign">
+            <a href="../../pages/login.html"
+              ><ion-icon name="enter-outline"></ion-icon>
+              <p>Entrar</p></a
+            >
+            <a href="../../pages/cadastro.html"
+              ><ion-icon name="person-circle-outline"></ion-icon>
+              <p>Cadastrar</p></a
+            >
+          </section>
+        </header>
+        <h2 class="main-title title">Tags de conteúdo</h2>
+        <section class="first-section">
+          <p class="first-section-text">
+            Espero que você tenha aprendido bastante na nossa última "texto
+            aula". A seção de tags de conteúdo é super importante,
+            principalmente por conta da semântica.
+          </p>
+          <p class="first-section-text">Essas são as tags que usamos:</p>
+          <ul class="lista-curso">
+            <li class="lista-curso-item">
+              header : define o cabeçalho do conteúdo;
+            </li>
+            <li class="lista-curso-item">main: define o conteúdo principal;</li>
+            <li class="lista-curso-item">
+              aside: define um conteúdo separado do conteúdo principal (como um
+              menu lateral);
+            </li>
+            <li class="lista-curso-item">
+              section: define uma seção de conteúdo;
+            </li>
+            <li class="lista-curso-item">
+              article: define um artigo de conteúdo;
+            </li>
+            <li class="lista-curso-item">
+              span: usado para um conteúdo qualquer, pode ser usado para conter
+              uma classe de estilo (elemento de linha);
+            </li>
+            <li class="lista-curso-item">
+              div: usado para um conteúdo qualquer, pode ser usado para conter
+              uma classe de estilo (elemento de bloco);
+            </li>
+          </ul>
+
+          <img
+            class="img-curso"
+            src="../../img/cursoHTML/tagConteudo.png"
+            alt="exemplo das tags de conteudo citadas"
+          />
+
+          <p class="first-section-text">
+            Acima temos um exemplo de como poderia funcionar a estrutura de site
+            genérico.
+          </p>
+
+          <blockquote
+            class="first-section-cite"
+            cite="https://resultadosdigitais.com.br/especiais/o-que-e-seo/"
+          >
+            <p>
+              SEO é uma otimização para os motores de busca, isto é, um conjunto
+              de técnicas que influenciam os algoritmos dos buscadores a definir
+              o ranking de uma página para determinada palavra-chave que foi
+              pesquisada.
+            </p>
+            <a
+              class="purple"
+              href="https://resultadosdigitais.com.br/especiais/o-que-e-seo/"
+              target="_blank"
+              >Clique aqui para saber mais.</a
+            >
+          </blockquote>
+
+          <p class="first-section-text">
+            Antigamente os sites eram feitos usando somente divs, com as tags
+            semânticas fica muito mais fácil entender cada parte do código. Por
+            isso sempre opte por deixar seu site 100% semântico, até porque os
+            robozinhos do Google (aqueles que te mostram as páginas principais)
+            dão preferência por sites assim. Fica a dica.
+          </p>
+          <h2 class="main-title">Deixando o conteúdo ainda mais legal...</h2>
+          <p class="first-section-text">
+              Para isso podemos usar imagens.
+              Para acrescentar uma imagem ao corpo documento basta abrir a tag  &lt;img&gt;.
+              Essa tag recebe como atributos src="", para especificar o caminho até a imagem
+              em questão, alt="", é um texto alternativo, que será mostrado no local da imagem
+               caso a URL dada esteja errada, e title="", o título que será mostrado quando o usuário
+               passar o mouse em cima.
+          </p>
+          <p class="first-section-text">
+            Lembrando que você pode adicionar .gif, além de .png, .jpeg ou .svg. O caminho da 
+            imagem pode ser local, ou você pode copiar o endereço da imagem 
+            no Google Imagens, por exemplo.
+            <a class="purple" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">Clique para saber mais sobre.</a>
+          </p>
+          <p class="first-section-text">
+            Um exemplo disso:
+         </p>
+          <img class="img-curso" src="../../img/cursoHTML/img.png" alt="essa é um exemplo da tag img">
+          <p class="first-section-text">
+            E para quebras de linhas podemos usar &lt;br&gt; ou &lt;hr&gt; 
+            (esse gera uma linha além da quebra).
+            Como o foco aqui é aprender as tags do HTML, esses elementos nos bastam, mas
+            quando começarmos a estilizar com CSS, dê preferência a ele, certo?
+          </p>
+          <img class="img-curso" src="../../img/cursoHTML/quebraLinha.png" alt="essa é um exemplo de quebras de linha">
+          <p class="first-section-text">
+            Agora deixo um desafio: criar um site semânticamente estruturado com as tags que aprendemos até agora.
+            Deixarei a janela de código do <a href="https://codepen.io" target="_blank">Codepen</a> abaixo, mas se sinta a vontade para criar suas páginas lá no site
+            também.
+          </p>
+          <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="rNzxXxJ" data-editable="true" data-user="paolaguedes" class="iframe-codepen">
+            <span>See the Pen <a href="https://codepen.io/paolaguedes/pen/rNzxXxJ">
+            código vazio</a> by paolaguedes (<a href="https://codepen.io/paolaguedes">@paolaguedes</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <footer class="footer">
+          <p>&copy; copyright, 2021</p>
+          <div class="footer-names">
+            <p><a>Alex</a> | <a>Paola</a></p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
+
+
+

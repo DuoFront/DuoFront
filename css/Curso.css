@@ -288,11 +288,14 @@ html body strong {
   margin-top: 40px;
 }
 .aside-lista-item {
-  padding: 1em;
   font-size: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-.aside-lista-item:hover {
+.aside-lista-item-link {
+  display: block;
+  padding: 1em;
+}
+.aside-lista-item-link:hover {
   background-color: #777;
 }
 
@@ -335,10 +338,13 @@ html body strong {
   }
 }
 .body-content .main-title {
-  font-size: 40px;
-  padding: 1em;
+  font-size: 2.3rem;
+  padding: 1em 0;
   line-height: 1.2;
   font-weight: bold;
+}
+.body-content .main .title {
+  padding: 1em;
 }
 .body-content .main .first-section {
   padding: 0 2.8em;
@@ -362,6 +368,7 @@ html body strong {
 .body-content .main .first-section .hipperlink {
   float: right;
   padding-left: 16px;
+  border-radius: 10px;
 }
 @media (max-width: 550px) {
   .body-content .main .first-section .hipperlink {
@@ -372,9 +379,11 @@ html body strong {
 .body-content .main .first-section .img-curso {
   max-width: 700px;
   width: 100%;
+  border-radius: 10px;
 }
 .body-content .main .first-section .lista-curso {
   padding: 0 1em;
+  margin-bottom: 20px;
 }
 .body-content .main .first-section .lista-curso-item {
   list-style-type: disc;
@@ -409,6 +418,10 @@ html body strong {
   margin: 1em 0;
   padding: 1em;
 }
+.body-content .main .first-section .purple {
+  color: #3A2883;
+  display: inline-block;
+}
 .body-content .main .first-section-subtitle {
   font-size: 2em;
   margin: 1em 0;
@@ -420,7 +433,7 @@ html body strong {
   padding: 1em;
   border-left: 5px solid #3A2883;
   padding-left: 10px;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 .body-content .main .first-section-text {
   margin: 1em 0;
