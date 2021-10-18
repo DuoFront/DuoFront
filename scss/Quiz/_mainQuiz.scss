@@ -40,7 +40,7 @@
         }
         // aqui começa a estilizacao do quiz
         .quiz-container {
-            background-color: variables.$bg-card;
+            background-color: variables.$bg-menu-curso;
             max-width: 700px;
             margin: 7em 3em 5em;
             padding: 3em;
@@ -91,7 +91,7 @@
             &-btn {
                 display: inline-block;
                 margin-top: 2em;
-                padding: .5em 1em;
+                padding: 1em 2em;
                 border-radius: 5px;
                 color: variables.$primary-color;
                 background-color: variables.$second-color;

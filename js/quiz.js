@@ -99,13 +99,12 @@ subBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             if(score<3){
-                document.location.href = 'http://www.example.com'
-                quiz.innerHTML = `<h2 class="quiz-container-title"> Sua pontuação foi: ${score}</h2><p class="score">Nossa sugestão é que você treine um pouco mais! Nunca desista!</p><button onclick="location.reload()" class=" quiz-container-btn btnScore">Refazer</button>`
-            } else if (score>=3 && score<=4) {
-                quiz.innerHTML = `<h2 class="quiz-container-title"> Sua pontuação foi: ${score}</h2><p class="score">Você foi muito bem! Continue assim!</p><button onclick="location.reload()" class=" quiz-container-btn btnScore">Refazer</button><a class=" quiz-container-btn btnScore" href="../pages/cursoCSS/aula1.html">Ir para CSS</a>`
+                document.location.href = `../QuizResults/badResult.html?${score}`
+            } else if (score == 3 || score ==4) {
+                document.location.href = `../QuizResults/mediumResult.html?${score}`
             } else {
-                quiz.innerHTML = `<h2 class="quiz-container-title"> Sua pontuação foi: ${score}</h2><p class="score">Você foi nota 10! Parabéns!!</p><img class="imgScore" src="../../img/cursoHTML/trofeu.png" alt="trofeu"><div class="btnScore-container"><button onclick="location.reload()" class=" quiz-container-btn btnScore">Refazer</button><a class=" quiz-container-btn btnScore" href="../pages/cursoCSS/aula1.html">Ir para CSS</a></div>`
-            }
+                document.location.href = `../QuizResults/niceResult.html?${score}`
+                }
         }
     }
 

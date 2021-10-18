@@ -124,6 +124,18 @@ html body strong {
     display: block;
   }
 }
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
+  }
+}
 .header-nav .menu-mobile ion-icon.active:nth-child(1) {
   display: none;
 }
@@ -142,6 +154,18 @@ html body strong {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
   }
 }
 .header-nav ul {
@@ -338,6 +362,18 @@ html body strong {
     display: block;
   }
 }
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
+  }
+}
 .aside-lista-item-link {
   display: block;
   padding: 1em;
@@ -391,7 +427,7 @@ html body strong {
   padding: 1em;
 }
 .body-content .main .quiz-container {
-  background-color: linear-gradient(#3A2883, rgba(0, 0, 0, 0.8));
+  background-color: #383B3E;
   max-width: 700px;
   margin: 7em 3em 5em;
   padding: 3em;
@@ -474,6 +510,18 @@ html body strong {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
   }
 }
 
