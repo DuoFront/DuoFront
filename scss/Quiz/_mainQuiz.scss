@@ -43,7 +43,7 @@
             background-color: variables.$bg-menu-curso;
             max-width: 700px;
             margin: 7em 3em 5em;
-            padding: 3em;
+            padding: 2em;
             border-radius: 10px;
             box-shadow: 1px 1px 5px variables.$second-color;
             position: relative;
@@ -66,25 +66,52 @@
             }
 
             &-lista {
-                margin-top: 3em;
+                width: 100%;
+                margin-top: 5em;
                 color: white;
 
                 &-item {
                     line-height: 1.8;
 
+                    label {
+                        cursor: pointer;
+
                         .radio-btn-btn {
 
-                            &:checked ~ label {
+                            &:checked ~ .texta:before {
+                                content: "";
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                border-radius: 50%;
                                 background-color: variables.$primary-color;
-                                color: #504091;
-                                padding: .4em .1em;
-                                border-radius: 5px;
+                                top: 6.5px;
+                                left: 6.5px;
+                                z-index: 1;
                             }
+                            &:checked ~ .texta {
+                                background-color: variables.$second-color;
+                                width: 22px;
+                                height: 22px;
+                                }
+                            }
+                        
+                        .texta{
+                            background-color: variables.$primary-color;
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            position: relative;
+                            border-radius: 50%;
+                            right: 20px;
                         }
-
-                        label {
-                            cursor: pointer;
-                        }
+                       .text {
+                           position: relative;
+                           right: 20px;
+                           bottom: 3px;
+                       }
+                    }
+                    
                 }
             }
 

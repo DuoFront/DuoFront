@@ -14,6 +14,7 @@
   position: fixed;
   padding: 90px 0 70px;
   transition: all 1s ease-in;
+  z-index: 1;
 
   @keyframes menuCurso {
     from {
@@ -32,6 +33,7 @@
     display: none;
     min-width: 50%;
     right: 0;
+    z-index: 1;
     animation: menuCurso .5s linear;
   }
   @include mixins.cell {
@@ -56,6 +58,7 @@
       transition: all 1s linear;
 
       @media (max-width: 850px) {
+        z-index: 1;
         animation: descendo .7s linear;
         @include mixins.animationMenu;
       }
