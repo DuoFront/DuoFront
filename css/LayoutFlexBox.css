@@ -29,12 +29,15 @@ strong {
   font-weight: normal;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   font-family: "Robot", sans-serif;
 }
-body strong {
+html body strong {
   color: #3A2883;
 }
 
@@ -121,6 +124,18 @@ body strong {
     display: block;
   }
 }
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
+  }
+}
 .header-nav .menu-mobile ion-icon.active:nth-child(1) {
   display: none;
 }
@@ -139,6 +154,18 @@ body strong {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
   }
 }
 .header-nav ul {
@@ -254,7 +281,6 @@ body strong {
   display: flex;
   flex-direction: column;
   position: fixed;
-  padding: 90px 0 70px;
 }
 @media (max-width: 850px) {
   .aside {
@@ -271,6 +297,11 @@ body strong {
 .aside.active {
   display: block;
 }
+.aside .title-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 .aside-title {
   font-size: 52px;
   padding: 0 0.5em;
@@ -282,7 +313,6 @@ body strong {
 }
 .aside-lista {
   width: 100%;
-  margin-top: 40px;
 }
 .aside-lista-item {
   padding: 1em;
