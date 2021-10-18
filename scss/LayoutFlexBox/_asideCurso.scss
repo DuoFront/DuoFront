@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  padding: 90px 0 70px;
+
 
   @media (max-width: 850px) {
     display: none;
@@ -27,7 +27,11 @@
     display: block;
     
   }
-
+  .title-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
   &-title {
     font-size: 52px;
     padding: 0 .5em;
@@ -38,7 +42,6 @@
   }
   &-lista {
       width: 100%;
-      margin-top: 40px;
     &-item {
         padding: 1em;
         font-size: 20px;

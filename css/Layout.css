@@ -29,12 +29,15 @@ strong {
   font-weight: normal;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   font-family: "Robot", sans-serif;
 }
-body strong {
+html body strong {
   color: #3A2883;
 }
 
@@ -104,6 +107,18 @@ body strong {
     display: block;
   }
 }
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
+  }
+}
 .header-nav .menu-mobile ion-icon.active:nth-child(1) {
   display: none;
 }
@@ -122,6 +137,18 @@ body strong {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@keyframes winner {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(-45deg);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(45deg);
   }
 }
 .header-nav ul {
@@ -181,6 +208,18 @@ body strong {
     100% {
       opacity: 1;
       display: block;
+    }
+  }
+  @keyframes winner {
+    0% {
+      opacity: 0;
+      display: none;
+      transform: translateX(-45deg);
+    }
+    100% {
+      opacity: 1;
+      display: block;
+      transform: translateX(45deg);
     }
   }
 }
@@ -249,6 +288,15 @@ body strong {
     flex-direction: column;
     max-width: 30em;
     height: 30em;
+  }
+}
+.main .main-cards-card-img {
+  width: 45%;
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 550px) {
+  .main .main-cards-card-img {
+    width: unset;
   }
 }
 @media (max-width: 550px) {
