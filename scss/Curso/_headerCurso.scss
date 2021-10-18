@@ -46,6 +46,8 @@
             ion-icon {
                 color: variables.$primary-color;
                 font-size: 65px;
+                position: relative;
+                z-index: 1;
 
                 &:nth-child(1){
                     animation: descendoTexto .2s linear;

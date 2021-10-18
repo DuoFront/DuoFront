@@ -110,6 +110,8 @@ html body strong {
 .header-nav .menu-mobile ion-icon {
   color: #fff;
   font-size: 65px;
+  position: relative;
+  z-index: 1;
 }
 .header-nav .menu-mobile ion-icon:nth-child(1) {
   animation: descendoTexto 0.2s linear;
@@ -283,6 +285,7 @@ html body strong {
   position: fixed;
   padding: 90px 0 70px;
   transition: all 1s ease-in;
+  z-index: 1;
 }
 @keyframes menuCurso {
   from {
@@ -301,6 +304,7 @@ html body strong {
     display: none;
     min-width: 50%;
     right: 0;
+    z-index: 1;
     animation: menuCurso 0.5s linear;
   }
 }
@@ -328,6 +332,7 @@ html body strong {
 }
 @media (max-width: 850px) {
   .aside-lista {
+    z-index: 1;
     animation: descendo 0.7s linear;
   }
   @keyframes descendo {
@@ -430,7 +435,7 @@ html body strong {
   background-color: #383B3E;
   max-width: 700px;
   margin: 7em 3em 5em;
-  padding: 3em;
+  padding: 2em;
   border-radius: 10px;
   box-shadow: 1px 1px 5px #3A2883;
   position: relative;
@@ -451,25 +456,50 @@ html body strong {
   font-size: 1.3em;
 }
 .body-content .main .quiz-container-lista {
-  margin-top: 3em;
+  width: 100%;
+  margin-top: 5em;
   color: white;
 }
 .body-content .main .quiz-container-lista-item {
   line-height: 1.8;
 }
-.body-content .main .quiz-container-lista-item .radio-btn-btn:checked ~ label {
-  background-color: #fff;
-  color: #504091;
-  padding: 0.4em 0.1em;
-  border-radius: 5px;
-}
 .body-content .main .quiz-container-lista-item label {
   cursor: pointer;
+}
+.body-content .main .quiz-container-lista-item label .radio-btn-btn:checked ~ .texta:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 6.5px;
+  left: 6.5px;
+  z-index: 1;
+}
+.body-content .main .quiz-container-lista-item label .radio-btn-btn:checked ~ .texta {
+  background-color: #3A2883;
+  width: 22px;
+  height: 22px;
+}
+.body-content .main .quiz-container-lista-item label .texta {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  right: 20px;
+}
+.body-content .main .quiz-container-lista-item label .text {
+  position: relative;
+  right: 20px;
+  bottom: 3px;
 }
 .body-content .main .quiz-container-btn {
   display: inline-block;
   margin-top: 2em;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   border-radius: 5px;
   color: #fff;
   background-color: #3A2883;

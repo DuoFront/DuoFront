@@ -94,6 +94,17 @@
     padding: 1em;
 }
 
+@mixin radio {
+    background-color: variables.$second-color;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    top: 25px;
+    right: 6px;
+}
+
 
 @mixin pc() {
     @media(max-width:960px){
