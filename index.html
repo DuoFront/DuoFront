@@ -31,7 +31,7 @@
     <header class="header">
       <nav class="header-nav">
         <div class="header-nav-logo">
-          <img src="./img/gatoLogo.png" alt="logo duofront" />
+         
           <h1>DuoFront</h1>
         </div>
         <div class="menu-mobile">
@@ -45,11 +45,7 @@
           ></ion-icon>
         </div>
         <ul class="menu-navigation">
-          <li>
-            <a href="./pages/layouts.html"
-              ><img src="./img/dvr.svg" alt="" />Layouts</a
-            >
-          </li>
+          
           <li class="mobile">
             <a href="./pages/login.html"
               ><ion-icon name="enter-outline"></ion-icon>
@@ -65,6 +61,9 @@
         </ul>
       </nav>
       <section class="header-sign">
+        <a href="./pages/layouts.html"
+        ><img src="./img/dvr.svg" alt="" style="padding-right: 5px;" />Layouts</a
+      >
         <a href="./pages/login.html"
           ><ion-icon name="enter-outline"></ion-icon>
           <p>Entrar</p></a
@@ -77,43 +76,49 @@
     </header>
 
     <main class="main">
-      <section class="main-hero">
-        <h2><strong>Olá</strong>, frontiender!</h2>
-        <p>Ótimo ter você aqui, que lindo dia para <strong>codar</strong>!</p>
-        <section class="main-modules">
-          <a href="./pages/cursoHTML/aula1.html" class="main-modules-course">
-            <img src="./img/html5.svg" alt="logo html5" />
-            <abbr title="Hypertext Markup Language">HTML5</abbr>
-          </a>
-          <a href="" class="main-modules-course">
-            <img src="./img/css.svg" alt="logo css" />
-            <abbr title="Cascading Style Sheets">CSS</abbr>
-          </a>
-          <a href="" class="main-modules-course">
-            <img src="./img/js.svg" alt="logo java script" />
-            <p>JS</p>
-          </a>
-        </section>
+      <section class="hero">
+        <article class="hero__title">
+          <h2>
+            Aprenda <strong>front-end</strong> de forma completa
+          </h2>
+        </article>
+        <article class="hero__img">
+          <img src="./img/gatoLogo.png" alt="" />
+        </article>
       </section>
-      <section class="cards">
-        <div class="cards-first" data-aos="zoom-in">
-          <p>Aprenda front-end de forma prática!</p>
+      <section class="modules">
+        <h2 class="main__title">Nossos módulos</h2>
+        <div class="modules__list">
+            <a class="modules__link" href="./pages/cursoHTML/aula1.html">HTML</a>
+            <a class="modules__link" href="#">CSS</a>
+            <a class="modules__link" href="#">JavaScript</a>
         </div>
-        <div class="cards-second" data-aos="zoom-in">
-          <p>Flexbox, Grid, JavaScript e muito mais!</p>
-        </div>
-      </section>
-    </main>
+    </section>
 
+    <section class="about">
+        <h2 class="main__title">Sobre a plataforma</h2>
+        <article class="about__card">
+            <p class="about__text">Aprenda com projetos ao fim de cada módulo!</p>
+            <span class="about__span">Duofront.com</span>
+        </article>
+        <article class="about__card card--left">
+            <p class="about__text">Teste seus conhecimentos com nosso quizzes!</p>
+            <span class="about__span">Duofront.com</span>
+        </article>
+    </section>
+
+    <section class="layout">
+        <article class="layout__img"></article>
+        <article class="layout__text">
+            <h2 class="layout__title">Pratique com nossos layouts</h2>
+            <a class="layout__link" href="#">Galeria de layouts <img src="./img/link.svg"></a>
+        </article>
+    </section>
     <footer class="footer">
-      <p>&copy; copyright, 2021</p>
-      <div class="footer-names">
-        <p><a>Alex</a> | <a>Paola</a></p>
-      </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+		<p>&copy;copyright, 2021</p>
+		<p>Alex | Paola</p>
+	</footer>
+    </main>
+    <script type='text/javascript' src='./js/menu.js'></script>
   </body>
 </html>
