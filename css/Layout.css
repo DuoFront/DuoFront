@@ -38,7 +38,7 @@ html body {
   font-family: "Robot", sans-serif;
 }
 html body strong {
-  color: #0353A4;
+  color: #7D1128;
 }
 
 .header {
@@ -228,7 +228,7 @@ html body strong {
   align-items: center;
 }
 .header-nav ul li a:hover {
-  color: #0353A4;
+  color: #7D1128;
 }
 .header-nav ul li a img {
   margin-right: 10px;
@@ -250,14 +250,14 @@ html body strong {
   gap: 10px;
 }
 .header-sign a:hover {
-  color: #0353A4;
+  color: #7D1128;
 }
 .header-sign a:last-of-type p {
   border-left: 1px solid #fff;
   padding-left: 10px;
 }
 .header-sign a:last-of-type p:hover {
-  border-color: #0353A4;
+  border-color: #7D1128;
 }
 
 .main {
@@ -284,7 +284,7 @@ html body strong {
   width: 100%;
   height: 15em;
   border-radius: 10px;
-  filter: drop-shadow(3px 3px 5px #0353A4);
+  filter: drop-shadow(3px 3px 5px #7D1128);
   padding: 0.5em;
   position: relative;
   overflow: hidden;
@@ -327,7 +327,7 @@ html body strong {
   }
 }
 .main .main-cards-card .card-text-title {
-  color: #0353A4;
+  color: #7D1128;
   font-weight: 500;
   font-size: 1.8em;
 }
@@ -344,13 +344,13 @@ html body strong {
   color: #B11B1B;
 }
 .main .main-cards-card .card-text-code {
-  color: #0353A4;
+  color: #7D1128;
   font-size: 25px;
 }
 .main .main-cards-card .card-text-btn {
   display: inline-block;
   margin: 10px;
-  background-color: #0353A4;
+  background-color: #7D1128;
   padding: 0.1em 2em;
   border-radius: 10px;
   transition: all 0.4s;

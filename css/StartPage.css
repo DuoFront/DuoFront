@@ -38,7 +38,7 @@ html body {
   font-family: "Robot", sans-serif;
 }
 html body strong {
-  color: #0353A4;
+  color: #7D1128;
 }
 
 .main__title {
@@ -46,7 +46,7 @@ html body strong {
   padding-bottom: 30px;
 }
 .main .purple {
-  color: #0353A4;
+  color: #7D1128;
 }
 .main .hero {
   display: flex;
@@ -93,7 +93,7 @@ html body strong {
   max-width: 360px;
   width: 100%;
   height: 70px;
-  background-color: #0353A4;
+  background-color: #7D1128;
   z-index: -1;
   bottom: -13px;
   left: 10px;
@@ -128,7 +128,7 @@ html body strong {
   top: 20px;
   left: -15px;
   border-top-left-radius: 10px;
-  background-color: #0353A4;
+  background-color: #7D1128;
 }
 .main .about__card:after {
   content: "";
@@ -140,7 +140,7 @@ html body strong {
   left: -15px;
   z-index: -1;
   border-top-left-radius: 10px;
-  background-color: #023a72;
+  background-color: #500b1a;
   transform: rotate(-90deg);
 }
 .main .about__text {
@@ -156,7 +156,7 @@ html body strong {
 }
 .main .layout {
   clear: right;
-  background-color: #0353A4;
+  background-color: #7D1128;
   display: flex;
   justify-content: space-around;
   height: 400px;
@@ -346,7 +346,7 @@ html body strong {
   padding-right: 7px;
 }
 .header-nav ul li a:hover {
-  color: #0353A4;
+  color: #7D1128;
 }
 .header-nav ul li a img {
   margin-right: 10px;
@@ -375,14 +375,14 @@ html body strong {
   padding-right: 5px;
 }
 .header-sign a:hover {
-  color: #0353A4;
+  color: #7D1128;
 }
 .header-sign a a:last-of-type p {
   border-left: 1px solid #fff;
   padding-left: 10px;
 }
 .header-sign a a:last-of-type p:hover {
-  border-color: #0353A4;
+  border-color: #7D1128;
 }
 
 .footer {
