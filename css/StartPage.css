@@ -57,6 +57,8 @@ html body strong {
   .main .hero {
     flex-direction: column;
     align-items: center;
+    height: unset;
+    margin: 28px;
   }
 }
 .main .hero__title {
@@ -78,11 +80,17 @@ html body strong {
 @media (max-width: 769px) {
   .main .hero__img {
     justify-content: center;
+    max-width: 90vw;
   }
 }
 .main .modules {
   margin: 70px;
   margin-bottom: 140px;
+}
+@media (max-width: 769px) {
+  .main .modules {
+    margin: 28px;
+  }
 }
 .main .modules__list {
   display: flex;
@@ -101,6 +109,11 @@ html body strong {
   font-size: 30px;
   background-color: #F8F9FD;
   position: relative;
+}
+@media (max-width: 769px) {
+  .main .modules__link {
+    font-size: 1.2rem;
+  }
 }
 .main .modules__link::before {
   content: "";
@@ -179,6 +192,12 @@ html body strong {
   height: 400px;
   padding: 3rem 5rem 3rem 6rem;
 }
+@media (max-width: 769px) {
+  .main .layout {
+    padding: 1rem 1.7rem 1rem 2rem;
+    height: 250px;
+  }
+}
 .main .layout__img {
   max-width: 50%;
   width: 100%;
@@ -193,22 +212,38 @@ html body strong {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  align-items: center;
 }
 .main .layout__title {
   max-width: 500px;
   font-size: 60px;
   font-weight: bold;
 }
+@media (max-width: 769px) {
+  .main .layout__title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 .main .layout__link {
   position: absolute;
   bottom: -70px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: #fff;
   padding: 2rem;
   font-size: 35px;
   font-weight: bold;
   color: #383B3E;
   border-radius: 10px;
+}
+@media (max-width: 769px) {
+  .main .layout__link {
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+    bottom: -50px;
+  }
 }
 
 .header {
