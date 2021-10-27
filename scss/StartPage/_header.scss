@@ -1,0 +1,62 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 70px;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        font-size: variables.$title-size;
+    }
+
+    &__menu {
+        position: relative;
+        z-index: 2;
+
+        &--open, &--close {
+            transition: .5s;
+            font-size: 4rem;
+        }
+
+        &--close {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        &--open.active {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: none;
+        background-color: #000;
+        width: 35vh;
+        height: 45vh; 
+        padding: 100px 70px 70px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        border-bottom-left-radius: 10px;
+        animation: descendo .5s ease-in;
+        @include mixins.animationMenu;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: 1.2rem;
+        color: variables.$primary-color;
+        padding-bottom: 10px;
+    }
+}
