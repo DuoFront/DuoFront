@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermy teste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <main>
+   
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <section class="hero" >
+            <div class="banner animatejs">
+              <span class="title2">
+                <h1><span class="title2--green">Presentear</span> será bem mais fácillll!</h1>
+              </span>
+              <span class="subtitle">
+                <img class="detalhe-setas " src="./assets/detalhe-setas.png" />
+                <p class="subtitle--text">A dúvida de presentear acabou, a Hermy você terá a oportunidade
+                   de não errar naquele presente nas diversas datas comemorativas do ano. </p>
+              </span>
+                <img class="banner-fundo " src="./assets/banner2.png" />
+                <img class="detalhe-x " src="./assets/detalhe-x.png" />
+                <img class="coracao" src="./assets/coração.png" />
+                <img class="bolinhas banner2" src="./assets/detalhe-bolinhas.png"/>
+                <img class="celular banner2 animatejs" src="./assets/cel2.png"/>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-slide">
+          <section class="hero" >
+            <div class="banner animatejs">
+              <span class="title">
+                <h1>O <span class="title--green">mundo digital</span> na sua mão</h1>
+              </span>
+              <span class="subtitle">
+                <img class="detalhe-setas " src="./assets/detalhe-setas.png" />
+                <p>Com o Saldo Hermy você pode aproveitar
+                  a  melhores empresas de streaming,
+                  jogos e delivery sem a necessidade
+                  de usar cartão de crédito!</p>
+              </span>
+                <img class="banner-fundo " src="./assets/Banner-Fundo.png" />
+                <img class="detalhe-x " src="./assets/detalhe-x.png" />
+                <img class="jinx" src="./assets/Jinx.png"/>
+                <img class="bolinhas" src="./assets/detalhe-bolinhas.png"/>
+                <img class="controle" src="./assets/controle.png"/>
+                <img class="mais1 animatejs" src="./assets/+1.png"/>
+                <img class="mais2 animatejs" src="./assets/+2.png"/>
+                <img class="oculos animatejs" src="./assets/óculos.png"/>
+                <img class="celular animatejs" src="./assets/Televisão1.png"/>
+            </div>
+          </section>
+        </div>
+
+      </div>
+        <div class="swiper-pagination" style="bottom: 100px;"></div>
+      </div>
+    </div>
+
+</main>
+  
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".animatejs"), {
+      max: 5,
+      speed: 400
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".animatejs"));
+
+    // AOS.init({
+    //   duration: 1000 
+    // });
+    // data-aos="zoom-in"
+  </script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      
+      // Navigation arrows
+      pagination: {
+          el: ".swiper-pagination",
+      }
+    })
+  </script>
+</body>
+</html>
